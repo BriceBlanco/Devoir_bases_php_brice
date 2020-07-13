@@ -32,6 +32,34 @@
 
     //Les conditions
 
+    $a = ($note1 + 2) / 2;// 17:2
+    $b = ($note2 + 7) / 2;// 20:2
+
+    if($a % 2 == 0 && $b % 2 == 0) {
+        echo "\nNotes paires.";
+    }
+    elseif ($a % 2 == 0 || $b % 2 == 0) {
+        echo "\nUne des notes paires est paire.";
+    }
+    elseif ($a <= 10 && $b <= 10) {
+        echo "\nMoyenne obtenue top top.";
+    }
+    else {
+        echo "\nVeuillez passer au secretariat.";
+    }
+
+    switch ($moyenne) {
+        case '20':
+            echo "\nSuccess !!!";
+            break;
+        case '10':
+            echo "\nEchoué !!!";
+            break;
+        
+        default:
+            echo "\nA refaire !!!";
+            break;
+    }
 
     //Les fonctions
 
