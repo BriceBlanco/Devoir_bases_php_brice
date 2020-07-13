@@ -26,6 +26,12 @@
 
     //Les booléens
 
+    $booleen = false;
+    if ($booleen == false) {
+        echo "\nVrai";
+    } else {
+        echo "\nFaux";
+    }
 
     //Les boucles
 
