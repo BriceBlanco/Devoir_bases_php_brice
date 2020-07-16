@@ -19,22 +19,34 @@
         'adresses' => ['kamenge','kinama','mutakura']
     ];
 
-    echo "\n".$tab1[2];
-    echo "\n".$tab1[4];
-    echo "\n".$tab2['nom'].' '.$tab2['prenom'];
-    echo "\n".$tab2['adresses'][2];
+    echo $tab1[2]."\n";
+    echo $tab1[4]."\n";
+    echo $tab2['nom'].' '.$tab2['prenom']."\n";
+    echo $tab2['adresses'][2]."\n";
 
     //Les booléens
 
     $booleen = false;
     if ($booleen == false) {
-        echo "\nVrai";
+        $booleen = true;
+        echo $booleen.": Vrai\n";
     } else {
-        echo "\nFaux";
+        echo $booleen.": Faux\n";
     }
 
     //Les boucles
 
+    $notes = [15,16,12,13,10];
+    $note = 16;
+    $i;
+
+    while ($note == $notes[1]) {
+        echo "Les notes sont: \n";
+        break;
+    }
+    for ($i=0; $i < 5; $i++) { 
+        echo "$notes[$i]\n";
+    }   
 
     //Les conditions
 
