@@ -68,18 +68,23 @@
 
     switch ($moyenne) {
         case '20':
-            echo "\nSuccess !!!";
+            echo "Success !!!\n";
             break;
         case '10':
-            echo "\nEchoué !!!";
+            echo "Echoué !!!\n";
             break;
         
         default:
-            echo "\nA refaire !!!";
+            echo "A refaire !!!\n";
             break;
     }
 
     //Les fonctions
+    
+    function hello($nom) {
+        return "Bonjour $nom.";
+    }
 
-
+    $n = hello("Brice");
+    echo $n;
     //POO
