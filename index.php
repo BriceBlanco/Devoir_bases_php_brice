@@ -50,8 +50,8 @@
 
     //Les conditions
 
-    $a = ($note1 + 2) / 2;// 17:2
-    $b = ($note2 + 7) / 2;// 20:2
+    $a = ($note1 + 2) / 2;
+    $b = ($note2 + 7) / 2;
 
     if($a % 2 == 0 && $b % 2 == 0) {
         echo "\nNotes paires.";
@@ -86,5 +86,24 @@
     }
 
     $n = hello("Brice");
-    echo $n;
+    echo $n."\n";
+    
     //POO
+    class Users
+    {
+        private $nom,$prenom,$password;
+
+        public function __construct($nom,$prenom)
+        {
+            $this->nom = $nom;
+            $this->prenom = $prenom;
+        }
+
+        public function getIdentite()
+        {
+            return $this->nom.' '.$this->prenom;
+        }
+    }
+
+    $user1 = new Users("NGABIRANO","Brice");
+    echo $user1->getIdentite();
